@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "toastedtestmod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Toasted Test Mod",
+  "description": "A test mod for ToastedBaker",
   "authors": [
-    "Me!"
+    "Sziad, ToastedBaker"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.sziad.toastedtestmod.ToastedTestMod"
+    ],
+    "client": [
+      "net.sziad.toastedtestmod.ToastedTestModClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "toastedtestmod.mixins.json"
   ],
 
   "depends": {
